@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIVIL DEFENCE INDORE</title>
+    <link rel="icon" type="image/x-icon" href="/image/cdlogo.jpg">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: gray;
+        }
+        .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f4f4f4;
+    font-size: 24px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 100px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.social-icons a {
+    margin-left: 10px;
+}
+
+.social-icons img {
+    height: 30px;
+    width: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* News Ticker */
+.news-ticker {
+    background-color: #e74c3c;
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 5px 0;
+    font-size: 24px;
+}
+
+.news-ticker h4 {
+    font-size: 24px;
+    display: inline-block;
+    margin: 0;
+    animation: scroll-left 20s linear infinite;
+}
+
+@keyframes scroll-left {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Navbar */
+.navbar {
+    background-color: #34495e;
+    display: flex;
+    justify-content: space-around;
+    position: fixed; /* Fixed position to stay on top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Make navbar full width */
+    z-index: 1000; /* Ensure navbar is above all content */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow for better visibility */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px; /* Adjusted padding for better spacing */
+    display: block;
+}
+
+.navbar a:hover {
+    background-color: #2c3e50;
+}
+
+/* Active page styling */
+.navbar a.active {
+    background-color: #1abc9c; /* Highlight color for the active page */
+    color: white;
+    font-weight: bold; /* Optional for emphasis */
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #34495e;
+    min-width: 160px;
+    z-index: 1;
+    top: 100%;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #2c3e50;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Body margin to avoid content overlap */
+body {
+    margin-top: 60px; /* Adjust according to the navbar height */
+}
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: silver;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        .grid-item {
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .grid-item img {
+            width: 50%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .grid-item img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .grid-item h3 {
+            margin-top: 10px;
+            font-size: 1rem;
+        }
+        
+        footer {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.footer-map iframe {
+    border: 0;
+    width: 100%;
+    height: 300px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 5px 0;
+    text-align: left;
+}
+
+.footer-nav a:hover {
+    background-color: #2c3e50;
+}
+
+.footer-nav a.active {
+    background-color: #e74c3c; /* Highlight color for active link */
+    color: white;
+}
+
+.footer-logo {
+    text-align: center;
+}
+
+.footer-logo img {
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-logo h3 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    ;
+}
+
+.footer-copyright {
+    text-align: center;
+    background-color: #2c3e50;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-content {
+        width: 20%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-nav {
+        align-items: center;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo">
+            <a href="index.html" target="blank">
+            <img src="image/civildefencelogo.png" alt="Civil Defence Logo">
+            <div></a>
+                <h1><b>Civil Defence Indore</b></h1>
+            </div>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.instagram.com" target="blank">
+                <img src="image/instagram.jpg" alt="Instagram" title="Follow us on Instagram">
+            </a>
+            <a href="https://www.youtube.com" target="blank">
+                <img src="image/youtube.png" alt="YouTube" title="Subscribe to our YouTube channel">
+            </a>
+            <a href="https://www.twitter.com" target="blank">
+                <img src="image/x.webp" alt="Twitter" title="Follow us on Twitter">
+            </a>
+        </div>
+    </div>
+
+    <!-- News Ticker -->
+    <div class="news-ticker">
+        <h4>Latest News: Civil Defence conducts mock drill | New volunteer training program | Public safety awareness campaign starts soon | Stay safe, stay alert!</h4>
+    </div>
+
+     <!-- Navigation Bar -->
+     <!-- Navigation Bar -->
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+        <a href="#">About Us</a>
+        <div class="dropdown-content">
+            <a href="civildefence.html">Civil Defence</a>
+            <a href="homeguard.html">Home Guard</a>
+            <a href="#">SDERF</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <a href="#">Role of Organization</a>
+        <div class="dropdown-content">
+            <a href="#">Rescue Operations</a>
+            <a href="#">Relief Work</a>
+            <a href="#">Volunteer Training</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <a href="#">Safety Measures</a>
+        <div class="dropdown-content">
+            <a href="#">Disaster Preparedness</a>
+            <a href="#">Safety Drills</a>
+            <a href="#">Emergency Protocols</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <a href="#">Emergency Services</a>
+        <div class="dropdown-content">
+            <a href="#">Home Guard</a>
+            <a href="#">Fire Brigade</a>
+            <a href="#">Police</a>
+            <a href="#">Ambulance</a>
+    
+        </div>
+        </div>
+    <a href="laws.html" class="active">Laws & Acts</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="#">Contact Us</a>
+</div>
+    
+    <div class="container">
+        <h1 class="title">Laws and Acts of Civil Defence</h1>
+        <div class="grid">
+            <div class="grid-item">
+                <a href="image/CD Act, 1968.pdf" target="_blank">
+                    <img src="image/CD ACT 1968.png" alt="Law 1">
+                    <h3>Civil Defence Act 1968</h3>
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="image/CD Act New, 1968.pdf" target="_blank">
+                    <img src="image/CD ACT NEW 1968.png" alt="Law 2">
+                    <h3>Civil Defence New Act 2</h3>
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="image/CD Regulation, 1968.pdf" target="_blank">
+                    <img src="image/CD REGULATION 1968.png" alt="Law 3">
+                    <h3>Civil Defence Regulation 1968</h3>
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="image/CD Rules, 1968.pdf" target="_blank">
+                    <img src="image/CD RULES 1968.png" alt="Law 4">
+                    <h3>Civil Defence Rules 1968</h3>
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="image/Amendment to CD Regulations 1971.pdf" target="_blank">
+                    <img src="image/AMMENDMENT CD REGULATIO 1971.png" alt="Law 5">
+                    <h3>Civil Defence Amendment Regulation 1971</h3>
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="image/Amendment to CD Regulations 1973.pdf" target="_blank">
+                    <img src="image/AMMENDMENT TO CD REGULATION 1973.png" alt="Law 6">
+                    <h3>Civil Defence Amendment Regulation 1973</h3>
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="image/Amendment 1975 to Act, Rules, Regulation.pdf" target="_blank">
+                    <img src="image/ACT RULES & REGULATION AMMENDMENT 1975.png" alt="Law 7">
+                    <h3>Civil Defence ACT RULES & REGULATION AMMENDMENT 1975</h3>
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="image/Act, Rule and Regulations, 2010 24-May-2020 14-49-19(1).pdf" target="_blank">
+                    <img src="image/ACT RULES & REGULATION 2010.png" alt="Law 8">
+                    <h3>Civil Defence ACT RULES & REGULATION 2010 </h3>
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="image/The_Defence_of_india_act,_1971.pdf" target="_blank">
+                    <img src="image/DEFENCE OF INDIA ACT 1971.png" alt="Law 9">
+                    <h3>DEFENCE OF INDIA ACT 1971</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <!-- Google Map Section -->
+            <div class="footer-map">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14721.872939589743!2d75.85889744400585!3d22.710831414387645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd24e1d324e7%3A0x9e157b61a01f5504!2sHome%20Guard%20Office!5e0!3m2!1sen!2sin!4v1734717869074!5m2!1sen!2sin" 
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            
+            <!-- Footer Content Section -->
+            <div class="footer-content">
+                <!-- Navigation Bar in Column -->
+                <div class="footer-nav">
+                    <a href="index.html" >Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Role of Organization</a>
+                    <a href="#">Safety Measures</a>
+                    <a href="#">Operation</a>
+                    <a href="laws.html" class="active">Laws & Acts</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="#">Contact Us</a>
+                </div>
+                
+                <!-- Logo and Title Section -->
+                <div class="footer-logo">
+                    <img src="image/civildefence logo.jpg" alt="Civil Defence Indore Logo" class="logo">
+                    <h3>Civil Defence Indore</h3>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Copyright Section -->
+        <div class="footer-copyright">
+            <p>&copy; 2024 Civil Defence Indore. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIVIL DEFENCE INDORE</title>
+    <link rel="icon" type="image/x-icon" href="/image/cdlogo.jpg">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: paleturquoise;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #f4f4f4;
+            font-size: 24px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 100px;
+            margin-right: 30px;
+            margin-left: 30px;
+        }
+
+        .social-icons a {
+            margin-left: 10px;
+        }
+
+        .social-icons img {
+            height: 30px;
+            width: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.2);
+        }
+
+        /* News Ticker */
+        .news-ticker {
+            background-color: #e74c3c;
+            color: white;
+            overflow: hidden;
+            white-space: nowrap;
+            padding: 5px 0;
+            font-size: 24px;
+        }
+
+        .news-ticker h4 {
+            font-size: 24px;
+            display: inline-block;
+            margin: 0;
+            animation: scroll-left 20s linear infinite;
+        }
+
+        @keyframes scroll-left {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #34495e;
+            display: flex;
+            justify-content: space-around;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: block;
+        }
+
+        .navbar a:hover {
+            background-color: #2c3e50;
+        }
+
+        .navbar a.active {
+            background-color: #1abc9c;
+            color: white;
+            font-weight: bold;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #34495e;
+            min-width: 160px;
+            z-index: 1;
+            top: 100%;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #2c3e50;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        body {
+            margin-top: 60px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: whitesmoke;
+            border-radius: 8px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        h1, h2, h2 {
+            color: #34495e;
+        }
+
+        .section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .section:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .section img {
+            width: 20%;
+            border-radius: 5px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 0 20px;
+        }
+
+        .section-text {
+            flex: 1;
+        }
+
+        .section-text h2 {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .section-text p {
+            margin-bottom: 15px;
+            font-size: 24px;
+            text-align: justify;
+        }
+
+
+        .section1 {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .section1:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .section1 img {
+            width: 20%;
+            border-radius: 5px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 0 20px;
+        }
+
+        .section1-text {
+            flex: 1;
+        }
+
+        .section1-text h2 {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .section1-text p {
+            margin-bottom: 15px;
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            padding: 20px 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            width: 50%;
+        }
+
+        .footer-nav {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer-nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px 0;
+            padding: 5px 0;
+            text-align: left;
+        }
+
+        .footer-nav a:hover {
+            background-color: #2c3e50;
+        }
+
+        .footer-nav a.active {
+            background-color: #e74c3c;
+            color: white;
+        }
+
+        .footer-logo {
+            text-align: center;
+        }
+
+        .footer-logo img {
+            height: 200px;
+            margin-bottom: 10px;
+        }
+
+        .footer-logo h3 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .footer-copyright {
+            text-align: center;
+            background-color: #2c3e50;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .footer-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .footer-content {
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+            }
+            .footer-nav {
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="index.html" target="blank">
+            <img src="image/civildefencelogo.png" alt="Civil Defence Logo">
+            <div></a>
+                <h1><b>Civil Defence Indore</b></h1>
+            </div>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.instagram.com" target="blank">
+                <img src="image/instagram.jpg" alt="Instagram" title="Follow us on Instagram">
+            </a>
+            <a href="https://www.youtube.com" target="blank">
+                <img src="image/youtube.png" alt="YouTube" title="Subscribe to our YouTube channel">
+            </a>
+            <a href="https://www.twitter.com" target="blank">
+                <img src="image/x.webp" alt="Twitter" title="Follow us on Twitter">
+            </a>
+        </div>
+    </div>
+
+    <!-- News Ticker -->
+    <div class="news-ticker">
+        <h4>Latest News: Civil Defence conducts mock drill | New volunteer training program | Public safety awareness campaign starts soon | Stay safe, stay alert!</h4>
+    </div>
+
+     <!-- Navigation Bar -->
+     <!-- Navigation Bar -->
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+        <a href="#" class="active">About Us</a>
+        <div class="dropdown-content">
+            <a href="civildefence.html" >Civil Defence</a>
+            <a href="homeguard.html" class="active">Home Guard</a>
+            <a href="#">SDERF</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <a href="#">Role of Organization</a>
+        <div class="dropdown-content">
+            <a href="#">Rescue Operations</a>
+            <a href="#">Relief Work</a>
+            <a href="#">Awareness Program</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <a href="#">Safety Measures</a>
+        <div class="dropdown-content">
+            <a href="#">Disaster Preparedness</a>
+            <a href="#">Safety Drills</a>
+            <a href="#">Emergency Protocols</a>
+        </div>
+    </div>
+    <div class="dropdown">
+    <a href="#">Emergency Services</a>
+    <div class="dropdown-content">
+        <a href="#">Home Guard</a>
+        <a href="#">Fire Brigade</a>
+        <a href="#">Police</a>
+        <a href="#">Ambulance</a>
+
+    </div>
+    </div>
+    <a href="laws.html">Laws & Acts</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="#">Contact Us</a>
+</div>
+
+<div class="container">
+    <h2>About Us</h2>
+
+    <!-- Section 1 -->
+    <div class="section">
+        <img src="image/homeguard mp.jpeg" alt="Homeguard">
+        <div class="section-text">
+            <h2>Who We Are</h2>
+            <p>
+                Home Guards Organization was established in Madhya Pradesh in 1947 under the Madhya Pradesh Home Guards Act 1947.
+                In the subsequent years, the Civil Defense (Civil Defense) was brought under the Madhya Pradesh Home Guards from
+                the applicable Home of Civil Protection Act. The main function of the department is to conduct the activities of
+                Madhya Pradesh Home Guards, Civil Defense, and Disaster Management and bring progress progressively in the quality of those activities.
+            </p>
+        </div>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="section">
+        <img src="image/home guard india.jpg" alt="Emergency Response Team">
+        <div class="section-text">
+            <h2>Our Mission</h2>
+            <p>
+                <b>Vision</b> <br>
+
+To provide adequate support to the police and military forces in terms of maintenance of law and order.<br>
+<br>
+<b>Mission</b><br>
+
+Creation of a superior paramilitary force in terms of swiftness, efficiency, and efficacy of operations.
+Creation of at least 7.5 Lakh Civil Defense Volunteers among the population of Madhya Pradesh.
+Setting up strong IT Systems and Communications Networks, by leveraging existing and future technologies to support the network of Home Guard Force, SDERF, and Civil Defense Volunteers.
+World-Class Infrastructure among the main cities and towns of Madhya Pradesh acting as a nodal point for Home Guard, Civil Defense Volunteers, and SDERF
+            </p>
+        </div>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="section">
+        <div class="section-text">
+            <h2>What We Do</h2>
+            <p>
+                The role of Home Guards is to serve as an auxiliary Force to the Police in maintenance of internal security situations, help the community in any kind of emergency such as an air-raid, fire, cyclone, earthquake, epidemic etc., help in maintenance of essential services, promote communal harmony and assist the administration in protecting weaker sections, participate in socio-economic and welfare activities and perform Civil Defence duties.
+            </p>
+            <ul>
+                <li>पुलिस के सहायक बल के रूप में कानून व्यवस्था बनाए रखना ।</li>
+                <li>किसी भी स्वरूप के आपातकाल जैसे हवाई हमला, आगजनी, बाढ, भूकम्प, महामारी आदि के दौरान प्रशासन की सहायता करना तथा जान-माल की रक्षा करना ।</li>
+                <li> संाप्रदायिक सद्भाव को बढ़ावा देना तथा समाज के कमजोर वर्ग की सुरक्षा में प्रशासन को सहायता पहुॅचाना ।</li>
+                <li> ग्राम सुधार व लोक कल्याणकारी कार्यो के व्दारा जनता से निकटता स्थापित कर प्रशासनिक सहयोग प्रदान करना ।</li>
+               <li> महत्वपूर्ण व्यक्तियों की सुरक्षा ।</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section 4 -->
+    <div class="section1">
+        <!-- <img src="image/exercise.jpg" alt="Community Safety Drill"> -->
+        <div class="section1-text">
+            <h2>History</h2>
+            <p>
+                Home Guards India ‘Home Guards’ is a voluntary force, first raised in India in December 1946, to assist the police in controlling civil disturbance and communal riots. Subsequently, the concept of the voluntary citizen’s
+                 force was adopted by several States. In the wake of Chinese aggression in 1962, the Centre advised the States and Union Territories to merge their existing voluntary organization into one uniform voluntary force known as Home Guards.
+
+.Home Guards are of two types – 
+rural and urban.In border States, Border Wing Home Guards (BWHG) Bns. have been raised, which serve as an auxiliary to the Border Security Force.The total strength of Home Guards in the country is 5,73,793 against which the raised strength is 433803.The organization is spread over in all States and Union Territories except in Kerala.
+
+Fifteen Border Wing Home Guards (BWHG) Battalions have been raised in the border States viz. Punjab (6 Bns.), Rajasthan ( 4 Bns.), Gujarat (2 Bns.), and one each Battalion for Meghalaya, Tripura, and West Bengal to serve as an auxiliary to Border Security Force for preventing infiltration on the international border/coastal areas, guarding of VA/VPs and lines of communication in the vulnerable area at the time of external aggression. Home Guards are raised under the Home Guards Act and Rules of the States/Union Territories. They are recruited from all classes of people and walks of life, who give their spare time to the organization for the betterment of the community. Amenities and facilities given to Home Guards include free uniforms, duty allowances, and awards for gallantry, distinguished and meritorious services. Members of Home Guards with three years’ service in the organization are trained in policing, maintaining law and order, preventing crime, anti-dacoity measures, border patrolling, prohibition, flood relief, fire-fighting, election duties, and social welfare activities.
+
+The Ministry of Home Affairs formulates the policy with respect to the role, raising, training, equipping, establishment and other important matters of the Home Guards Organization. Expenditure on Home Guards is generally shared between the Centre and State Government in the ratio of 25% by the Centre and 75% by the State Government for raising, training and equipping on a reimbursement basis. For North-Eastern States except Assam, the sharing pattern between the Centre and States in the ratio of 50:50.For the current year 2017-18 out of the budgetary provision of Rs.25.00 crore, Rs. 11.38 crore has been reimbursed to the States.
+            </p>
+        </div>
+        
+    </div>
+</div>
+
+<footer>
+    <div class="footer-container">
+        <!-- Google Map Section -->
+        <div class="footer-map">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14721.872939589743!2d75.85889744400585!3d22.710831414387645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd24e1d324e7%3A0x9e157b61a01f5504!2sHome%20Guard%20Office!5e0!3m2!1sen!2sin!4v1734717869074!5m2!1sen!2sin" 
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        
+        <!-- Footer Content Section -->
+        <div class="footer-content">
+            <!-- Navigation Bar in Column -->
+            <div class="footer-nav">
+                <a href="index.html" >Home</a>
+                <a href="#"class="active">About Us</a>
+                <a href="#">Role of Organization</a>
+                <a href="#">safety Measures</a>
+                <a href="#">Operation</a>
+                <a href="laws.html">Laws & Acts</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="#">Contact Us</a>
+            </div>
+            
+            <!-- Logo and Title Section -->
+            <div class="footer-logo">
+                <img src="image/civildefence logo.jpg" alt="Civil Defence Indore Logo" class="logo">
+                <h3>Civil Defence Indore</h3>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Copyright Section -->
+    <div class="footer-copyright">
+        <p>&copy; 2024 Civil Defence Indore. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>

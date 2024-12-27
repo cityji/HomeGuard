@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIVIL DEFENCE INDORE</title>
+  <link rel="icon" type="image/x-icon" href="/image/cdlogo.jpg">
+    <style>
+        /* General Styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: silver;
+        }
+
+        /* Header Section */
+        
+    /* Header */
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f4f4f4;
+    font-size: 24px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 100px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.social-icons a {
+    margin-left: 10px;
+}
+
+.social-icons img {
+    height: 30px;
+    width: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* News Ticker */
+.news-ticker {
+    background-color: #e74c3c;
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 5px 0;
+    font-size: 24px;
+}
+
+.news-ticker h4 {
+    font-size: 24px;
+    display: inline-block;
+    margin: 0;
+    animation: scroll-left 20s linear infinite;
+}
+
+@keyframes scroll-left {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Navbar */
+.navbar {
+    background-color: #34495e;
+    display: flex;
+    justify-content: space-around;
+    position: fixed; /* Fixed position to stay on top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Make navbar full width */
+    z-index: 1000; /* Ensure navbar is above all content */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow for better visibility */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px; /* Adjusted padding for better spacing */
+    display: block;
+}
+
+.navbar a:hover {
+    background-color: #2c3e50;
+}
+
+/* Active page styling */
+.navbar a.active {
+    background-color: #1abc9c; /* Highlight color for the active page */
+    color: white;
+    font-weight: bold; /* Optional for emphasis */
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #34495e;
+    min-width: 160px;
+    z-index: 1;
+    top: 100%;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #2c3e50;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Body margin to avoid content overlap */
+body {
+    margin-top: 60px; /* Adjust according to the navbar height */
+}
+
+
+
+        /* Image Slider */
+        .image-slider-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+        .image-slider {
+            width: 70%;
+            overflow:hidden;
+            position: absolute;
+        }
+        .slider-track {
+            display:flex;
+            width: calc(100%); /* Twice the width for seamless looping */
+            animation: slide 20s linear infinite;
+        }
+        .slider-track img {
+            width: 50%; /* Adjust based on the container */
+            height: 300px;
+            object-fit: cover;
+        }
+        @keyframes slide {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* Main Layout */
+        .main-layout {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+
+        /* Main Content */
+        .main-content {
+            display: flex;
+            flex-direction: row;
+            column-gap: 10px;
+            width: 74%;
+            padding-top: 20%;
+            
+        }
+        
+        .profile-card {
+            width: 60%;
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 1px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            
+        }
+        .profile-card img {
+            width: 300px;
+            border-radius: 5%;
+            margin-bottom: 1px;
+            padding-top: 10px;
+        }
+        .profile-card button {
+            background-color: #2c3e50;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        
+        
+        .section-text {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    padding-right: 10px;
+    font-size: 24px; /* Adjusted text size */
+    line-height: 1.6; /* Improved readability */
+}
+      
+        /* Chief Minister Section */
+        .right-column {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.chief-minister {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    text-align: center;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.slide h2, 
+.slide h3 {
+    margin: 10px 0;
+    font-size: 1rem; /* Adjust as needed */
+}
+
+.chief-minister .slideshow-container .slide:first-child {
+    display: block; /* Ensure the first slide is visible by default */
+}
+
+         .notice-board {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        
+        .notice-board {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        
+        .notice-board {
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .notice-board h3 {
+            text-align: center;
+            margin-bottom: 10px;
+            background-color: #d2f10c;
+            text-decoration: double;
+            
+        }
+
+        .notice-content {
+            position: absolute;
+            animation: scroll-up 10s linear infinite;
+            
+        }
+
+        .notice-item {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            font-size: 14px;
+        }
+
+        @keyframes scroll-up {
+            from {
+                top: 100%;
+            }
+            to {
+                top: 20%;
+            }
+        }
+
+        /* Footer */
+        /* Footer */
+/* Footer */
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.footer-map iframe {
+    border: 0;
+    width: 200%;
+    height: 400px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 5px 0;
+    text-align: left;
+}
+
+.footer-nav a:hover {
+    background-color: #2c3e50;
+}
+
+.footer-nav a.active {
+    background-color: #e74c3c; /* Highlight color for active link */
+    color: white;
+}
+
+.footer-logo {
+    text-align: center;
+}
+
+.footer-logo img {
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.footer-logo h3 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+
+.footer-copyright {
+    text-align: center;
+    background-color: #2c3e50;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-content {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-nav {
+        align-items: center;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="logo">
+            <a href="index.html" target="blank">
+            <img src="image/civildefencelogo.png" alt="Civil Defence Logo">
+            <div></a>
+                <h1><b>Civil Defence Indore</b></h1>
+            </div>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.instagram.com" target="blank">
+                <img src="image/instagram.jpg" alt="Instagram" title="Follow us on Instagram">
+            </a>
+            <a href="https://www.youtube.com" target="blank">
+                <img src="image/youtube.png" alt="YouTube" title="Subscribe to our YouTube channel">
+            </a>
+            <a href="https://www.twitter.com" target="blank">
+                <img src="image/x.webp" alt="Twitter" title="Follow us on Twitter">
+            </a>
+        </div>
+    </div>
+
+    <!-- News Ticker -->
+    <div class="news-ticker">
+        <h4>Latest News: Civil Defence conducts mock drill | New volunteer training program | Public safety awareness campaign starts soon | Stay safe, stay alert!</h4>
+    </div>
+
+     <!-- Navigation Bar -->
+     <!-- Navigation Bar -->
+<div class="navbar">
+    <a href="index.html" class="active">Home</a>
+    <div class="dropdown">
+        <a href="#">About Us</a>
+        <div class="dropdown-content">
+            <a href="civildefence.html">Civil Defence</a>
+            <a href="homeguard.html">Home Guard</a>
+            <a href="#">SDERF</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <a href="#">Role of Organization</a>
+        <div class="dropdown-content">
+            <a href="#">Rescue Operations</a>
+            <a href="#">Relief Work</a>
+            <a href="#">Volunteer Training</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <a href="#">Safety Measures</a>
+        <div class="dropdown-content">
+            <a href="#">Disaster Preparedness</a>
+            <a href="#">Safety Drills</a>
+            <a href="#">Emergency Protocols</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <a href="#">Emergency Services</a>
+        <div class="dropdown-content">
+            <a href="#">Home Guard</a>
+            <a href="#">Fire Brigade</a>
+            <a href="#">Police</a>
+            <a href="#">Ambulance</a>
+    
+        </div>
+        </div>
+    <a href="laws.html">Laws & Acts</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="#">Contact Us</a>
+</div>
+
+    <!-- Image Slider and Main Layout -->
+    <div class="image-slider-container">
+        <!-- Infinite Image Slider -->
+        <div class="image-slider">
+            <div class="slider-track">
+                <img src="image/covid.jpg" alt="Rescue Operation 1">
+                <img src="image/exercise.jpg" alt="Rescue Operation 2">
+                <img src="image/fire fighting.jpg" alt="Rescue Operation 3">
+
+                <img src="image/field pic.webp" alt="Rescue Operation 1">
+                <img src="image/instrument display.jpg" alt="Rescue Operation 2">
+                <img src="image/interaction.jpg" alt="Rescue Operation 3">
+               
+                <img src="image/mock drill 2.jpg" alt="Rescue Operation 1">
+                <img src="image/mock drill.jpg" alt="Rescue Operation 2">
+                <img src="image/training1.jpg" alt="Rescue Operation 3">
+               
+            </div>
+        </div>
+
+        <!-- Main Layout with Chief Minister and Notice Board Sections -->
+        <div class="main-layout">
+            <!-- Left Column (Main Content) -->
+            <div class="main-content">
+                <div class="profile-card">
+                    <img src="image/arvind kumar.jpeg" alt="Chief Officer">
+                    <h3>Mr. Ajay Kumar</h3>
+                    <p>Chief Officer, Civil Defence</p>
+                    <!-- <button>View Message</button> -->
+                </div>
+
+                <div class="section-text">
+                    <h3>Importance of Civil Defence</h3>
+                    <p>
+                        Civil Defence plays a crucial role in ensuring public safety during emergencies. It assists in rescue missions, relief operations, and volunteer training to prepare for crises.Civil Defence Indore is a Government-run organization of highly qualified professionals in responding quickly to emergencies like rescue operations from disaster, fire rescue & crowd management. It is an organization of highly trained professionals and also a strong team of trained volunteers.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Right Column (Chief Minister and Notice Board) -->
+            <div class="right-column">
+                <div class="chief-minister">
+                    <div class="slideshow-container">
+                        <div class="slide">
+                            <img src="image/cm mp.jpg" alt="Chief Minister">
+                            <h2>Dr. Mohan Yadav</h2>
+                            <h3>Chief Minister</h3>
+                        </div>
+                        <div class="slide">
+                            <img src="image/collector indore.jpg" alt="Collector">
+                            <h2>Mr. Asheesh Singh</h2>
+                            <h3>District Collector</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="notice-board">
+                    <h3>Notice Board</h3>
+                    <div class="notice-content">
+                        <div class="notice-item">Mock drill for disaster preparedness on Dec 20.</div>
+                        <div class="notice-item">Volunteer registration closes on Dec 25.</div>
+                        <div class="notice-item">Safety awareness seminar on Dec 22 at Indore HQ.</div>
+                        <div class="notice-item">Emergency response training starts Jan 5.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+ 
+<footer>
+    <div class="footer-container">
+        <!-- Google Map Section -->
+        <div class="footer-map">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14721.872939589743!2d75.85889744400585!3d22.710831414387645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd24e1d324e7%3A0x9e157b61a01f5504!2sHome%20Guard%20Office!5e0!3m2!1sen!2sin!4v1734717869074!5m2!1sen!2sin" 
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        
+        <!-- Footer Content Section -->
+        <div class="footer-content">
+            <!-- Navigation Bar in Column -->
+            <div class="footer-nav">
+                <a href="index.html" class="active">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Role of Organization</a>
+                <a href="#">safety Measures</a>
+                <a href="#">Operation</a>
+                <a href="laws.html">Laws & Acts</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="#">Contact Us</a>
+            </div>
+            
+            <!-- Logo and Title Section -->
+            <div class="footer-logo">
+                <img src="image/civildefence logo.jpg" alt="Civil Defence Indore Logo" class="logo">
+                <h3>Civil Defence Indore</h3>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Copyright Section -->
+    <div class="footer-copyright">
+        <p>&copy; 2024 Civil Defence Indore. All rights reserved.</p>
+    </div>
+</footer>
+
+   
+
+
+
+</body>
+</html>
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.style.display = i === index ? 'block' : 'none';
+        });
+    }
+
+    function startSlideshow() {
+        showSlide(currentSlide);
+        currentSlide = (currentSlide + 1) % slides.length;
+        setTimeout(startSlideshow, 5000); // 5 seconds
+    }
+
+    // Initialize slideshow
+    document.addEventListener('DOMContentLoaded', startSlideshow);
+</script>
