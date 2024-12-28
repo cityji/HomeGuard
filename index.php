@@ -13,7 +13,7 @@
     <?php 
     require_once('./components/Nav.php');
     ?>
-
+<p>hello nikhil</p>
 
 </body>
 
