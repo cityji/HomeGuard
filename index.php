@@ -14,7 +14,7 @@
     require_once('./components/Nav.php');
     ?>
 
-
+<p>Hello world</p>
 </body>
 
 </html>
