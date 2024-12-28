@@ -4,14 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello Homeguards</title>
+    <title>Index Page</title>
     <?php
     include './anchor.php';
+    include ('./components/error.php');
     ?>
 
 <body>
     <?php 
-    require_once('./components/Nav.php');
+    include('./components/Nav.php');
+    include ('./components/Topics.php');
     ?>
 
 
