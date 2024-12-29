@@ -1,6 +1,6 @@
 <!-- Navbar Component -->
 <nav x-data="{ isOpen: false, activeDropdown: null }"
-     class="bg-white border-b border-gray-100 fixed w-full top-0 z-50 shadow-md">
+     class="mb-24  bg-white border-b border-gray-100 w-full top-0 z-50 shadow-md">
     <div class="max-w-[100dvw] mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Main Navigation Bar -->
         <div class="flex justify-between items-center h-20">
