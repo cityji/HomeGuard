@@ -101,7 +101,7 @@
         <div class="mt-12 pt-8 border-t border-neutral-DEFAULT">
             <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
                 <p class="text-text-secondary text-sm">
-                    © 2024 Civil Defence Indore, Government of Madhya Pradesh. All rights reserved.
+                    © 2024 Civil Defence Indore, Government of Madhya Pradesh . All rights reserved.
                 </p>
                 <div class="flex space-x-6">
                     <a href="#" class="text-text-secondary hover:text-secondary-DEFAULT text-sm transition-colors duration-300">Privacy Policy</a>
