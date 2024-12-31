@@ -46,10 +46,7 @@
     <div class="bg-gray-100 p-6 rounded-md flex items-center justify-center">
         <img src="/assets/collector indore.jpg" alt=" Collector Image" class="w-40 h-40 object-cover rounded-md">
     </div>
-</div>
-
-
-       
+</div>   
     </main>
         <!-- Services Preview -->
         <div class="grid md:grid-cols-2 gap-8 rounded-3xl bg-white shadow-xl p-8">
