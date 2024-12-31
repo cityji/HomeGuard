@@ -27,7 +27,7 @@
 <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
     <!-- Left Image Section (Square) -->
     <div class="bg-gray-100 p-6 rounded-md flex items-center justify-center">
-        <img src="image/cm mp.jpg" alt="Left Image" class="w-40 h-40 object-cover rounded-md">
+        <img src="/assets/cm mp.jpg" alt="CM Image" class="w-40 h-40 object-cover rounded-md">
     </div>
 
     <!-- Notice Board (Rectangle) -->
@@ -44,7 +44,7 @@
 
     <!-- Right Image Section (Square) -->
     <div class="bg-gray-100 p-6 rounded-md flex items-center justify-center">
-        <img src="image/collector indore.jpg" alt="Right Image" class="w-40 h-40 object-cover rounded-md">
+        <img src="/assets/collector indore.jpg" alt=" Collector Image" class="w-40 h-40 object-cover rounded-md">
     </div>
 </div>
 
