@@ -63,11 +63,11 @@
                 <ul class="space-y-3">
                     <li class="flex items-start space-x-3">
                         <i class="fas fa-map-marker-alt mt-1 text-secondary-DEFAULT"></i>
-                        <span class="text-text-secondary">123 Business Street, Suite 100, Your City, ST 12345</span>
+                        <span class="text-text-secondary">2, Pipliyahana Rd, White Church Colony, Residency Area, Indore, Madhya Pradesh 452001</span>
                     </li>
                     <li class="flex items-center space-x-3">
                         <i class="fas fa-phone-alt text-secondary-DEFAULT"></i>
-                        <span class="text-text-secondary">+1 (555) 123-4567</span>
+                        <span class="text-text-secondary">0731.2499216</span>
                     </li>
                     <li class="flex items-center space-x-3">
                         <i class="fas fa-envelope text-secondary-DEFAULT"></i>
@@ -87,7 +87,7 @@
                         x-show="mapLoaded"
                         x-transition:enter="transition-opacity duration-700"
                         class="w-full h-full"
-                        src="https://www.google.com/maps/embed?pb=YOUR_MAP_EMBED_CODE"
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14721.872939589743!2d75.85889744400585!3d22.710831414387645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1735630651123!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         style="border:0;"
                         allowfullscreen=""
                         loading="lazy"
@@ -101,7 +101,7 @@
         <div class="mt-12 pt-8 border-t border-neutral-DEFAULT">
             <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
                 <p class="text-text-secondary text-sm">
-                    © 2024 Your Company. All rights reserved.
+                    © 2024 Civil Defence Indore. All rights reserved.
                 </p>
                 <div class="flex space-x-6">
                     <a href="#" class="text-text-secondary hover:text-secondary-DEFAULT text-sm transition-colors duration-300">Privacy Policy</a>
