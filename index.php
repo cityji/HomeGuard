@@ -15,6 +15,75 @@
     <?php 
     include('./components/Nav.php');
     ?>
+    <main class="container mx-auto p-6">
+        <!-- Textbox Section on Top -->
+        <section class="bg-gray-100 p-6 rounded-md mb-8">
+            <h2 class="text-xl font-bold text-primary mb-2">Civil Defence Indore</h2>
+            <p class="text-text-secondary">Civil Defence plays a crucial role in ensuring public safety during emergencies. It assists in rescue missions, relief operations, and volunteer training to prepare for crises. Civil Defence Indore is a Government-run organization of highly qualified professionals in responding quickly to emergencies like rescue operations from disaster, fire rescue & crowd management. It is an organization of highly trained professionals and also a strong team of trained volunteers.</p>
+        </section>
+
+        <!-- Three Column Section -->
+        <!-- Three Column Section -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+    <!-- Left Image Section (Square) -->
+    <div class="bg-gray-100 p-6 rounded-md flex items-center justify-center">
+        <img src="image/cm mp.jpg" alt="Left Image" class="w-40 h-40 object-cover rounded-md">
+    </div>
+
+    <!-- Notice Board (Rectangle) -->
+    <div class="bg-primary-light text-text-white p-6 rounded-md w-full h-48">
+        <h2 class="text-xl font-semibold border-b mb-4">Notice Board</h2>
+        <div class="overflow-hidden">
+            <div class="scroll-up flex flex-col space-y-4">
+                <p>Notice 1: Emergency drill on 15th Jan</p>
+                <p>Notice 2: Volunteer meeting at 4 PM</p>
+                <p>Notice 3: Training session on disaster management</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Right Image Section (Square) -->
+    <div class="bg-gray-100 p-6 rounded-md flex items-center justify-center">
+        <img src="image/collector indore.jpg" alt="Right Image" class="w-40 h-40 object-cover rounded-md">
+    </div>
+</div>
+
+
+        <!-- What We Do Section -->
+        <section class="bg-white px-8 py-6 rounded-md">
+            <h2 class="text-2xl font-bold text-primary mb-6 text-center">What We Do</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Fire Rescue -->
+                <div class="text-center">
+                    <img src="image/fire smaple.png" alt="Fire Rescue" class="w-32 h-32 md:w-40 md:h-40 object-cover rounded-md mx-auto mb-4">
+                    <h3 class="text-lg md:text-xl font-semibold mb-2">Fire Rescue</h3>
+                    <a href="#" class="text-text-secondary underline hover:text-primary-light">Read more</a>
+                </div>
+
+                <!-- Landslide Rescue -->
+                <div class="text-center">
+                    <img src="image/land slide.jpg" alt="Landslide Rescue" class="w-32 h-32 md:w-40 md:h-40 object-cover rounded-md mx-auto mb-4">
+                    <h3 class="text-lg md:text-xl font-semibold mb-2">Landslide Rescue</h3>
+                    <a href="#" class="text-text-secondary underline hover:text-primary-light">Read more</a>
+                </div>
+
+                <!-- Training -->
+                <div class="text-center">
+                    <img src="image/training1.jpg" alt="Training" class="w-32 h-32 md:w-40 md:h-40 object-cover rounded-md mx-auto mb-4">
+                    <h3 class="text-lg md:text-xl font-semibold mb-2">Training</h3>
+                    <a href="#" class="text-text-secondary underline hover:text-primary-light">Read more</a>
+                </div>
+
+                <!-- Building Rescue -->
+                <div class="text-center">
+                    <img src="image/building sample.jpg" alt="Building Rescue" class="w-32 h-32 md:w-40 md:h-40 object-cover rounded-md mx-auto mb-4">
+                    <h3 class="text-lg md:text-xl font-semibold mb-2">Building Rescue</h3>
+                    <a href="#" class="text-text-secondary underline hover:text-primary-light">Read more</a>
+                </div>
+            </div>
+        </section>
+    </main>
         <!-- Services Preview -->
         <div class="grid md:grid-cols-2 gap-8 rounded-3xl bg-white shadow-xl p-8">
             <div class="space-y-6">
