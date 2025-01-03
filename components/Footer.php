@@ -4,11 +4,11 @@
             <!-- Logo and Description Section -->
             <div class="space-y-4 animate-fade-in">
                 <div class="flex items-center space-x-2">
-                    <img src="/path-to-your-logo.png" alt="Company Logo" class="h-12 w-auto">
-                    <h3 class="text-xl font-bold">Your Company</h3>
+                    <img src="/assets/civildefence logo.jpg" alt="Civil Defence  Logo" class="h-12 w-auto">
+                    <h3 class="text-xl font-bold">Civil Defence Indore</h3>
                 </div>
                 <p class="text-text-secondary leading-relaxed">
-                    Your company's compelling description goes here. Make it engaging and informative to capture visitors' attention and convey your brand's value proposition.
+                    Civil Defence Indore,the first responder to natural or human-made disaster's.
                 </p>
                 <div class="flex space-x-4 pt-4">
                     <a href="#" class="text-text-white hover:text-secondary-DEFAULT transition-colors duration-300">
@@ -67,7 +67,7 @@
                     </li>
                     <li class="flex items-center space-x-3">
                         <i class="fas fa-phone-alt text-secondary-DEFAULT"></i>
-                        <span class="text-text-secondary">0731.2499216</span>
+                        <span class="text-text-secondary">0731-2499216</span>
                     </li>
                     <li class="flex items-center space-x-3">
                         <i class="fas fa-envelope text-secondary-DEFAULT"></i>
@@ -87,7 +87,7 @@
                         x-show="mapLoaded"
                         x-transition:enter="transition-opacity duration-700"
                         class="w-full h-full"
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14721.872939589743!2d75.85889744400585!3d22.710831414387645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1735630651123!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14721.872939589743!2d75.85889744400585!3d22.710831414387645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1735630651123!5m2!1sen!2sin" 
                         style="border:0;"
                         allowfullscreen=""
                         loading="lazy"
@@ -101,7 +101,7 @@
         <div class="mt-12 pt-8 border-t border-neutral-DEFAULT">
             <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
                 <p class="text-text-secondary text-sm">
-                    © 2024 Civil Defence Indore. All rights reserved.
+                    © 2024 Civil Defence Indore, Government of Madhya Pradesh . All rights reserved.
                 </p>
                 <div class="flex space-x-6">
                     <a href="#" class="text-text-secondary hover:text-secondary-DEFAULT text-sm transition-colors duration-300">Privacy Policy</a>
