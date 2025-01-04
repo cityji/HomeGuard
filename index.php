@@ -42,13 +42,13 @@
                     <h3 class="font-semibold mb-2">Training Programs</h3>
                     <p class="text-text-secondary text-sm">Comprehensive training for emergency response</p>
                 </div>
-                <div x-data="{ show: false }" x-intersect="show = true" 
+                <!-- <div x-data="{ show: false }" x-intersect="show = true" 
                     :class="show ? 'translate-y-0 opacity-0' : 'translate-y-4 opacity-100'"
                     class="bg-neutral-light rounded-xl p-6 transition-all duration-500 delay-100">
                     <i class="fas fa-clipboard-check text-3xl text-primary mb-4"></i>
                     <h3 class="font-semibold mb-2">Certification</h3>
                     <p class="text-text-secondary text-sm">Official certifications for completed courses</p>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>

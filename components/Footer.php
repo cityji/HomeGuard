@@ -4,7 +4,7 @@
             <!-- Logo and Description Section -->
             <div class="space-y-4 animate-fade-in">
                 <div class="flex items-center space-x-2">
-                    <img src="/path-to-your-logo.png" alt="Company Logo" class="h-12 w-auto">
+                    <img src="/assets/sderf logo.jpg" alt="Company Logo" class="h-12 w-auto">
                     <h3 class="text-xl font-bold">Your Company</h3>
                 </div>
                 <p class="text-text-secondary leading-relaxed">
@@ -87,7 +87,7 @@
                         x-show="mapLoaded"
                         x-transition:enter="transition-opacity duration-700"
                         class="w-full h-full"
-                        src="https://www.google.com/maps/embed?pb=YOUR_MAP_EMBED_CODE"
+                        src="< src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49068.38354936372!2d74.36806522167969!3d23.55871490000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3966c513f3c447dd%3A0xa37bae7d5c96fcd2!2sCivil%20Defence%20office%20%2C%20Banswara!5e1!3m2!1sen!2sin!4v1735641816780!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
                         style="border:0;"
                         allowfullscreen=""
                         loading="lazy"
