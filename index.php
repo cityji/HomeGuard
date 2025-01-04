@@ -20,6 +20,7 @@
         <section class="bg-gray-100 p-6 rounded-md mb-8">
             <h2 class="text-xl font-bold text-primary mb-2">Civil Defence Indore</h2>
             <p class="text-text-secondary">Civil Defence plays a crucial role in ensuring public safety during emergencies. It assists in rescue missions, relief operations, and volunteer training to prepare for crises. Civil Defence Indore is a Government-run organization of highly qualified professionals in responding quickly to emergencies like rescue operations from disaster, fire rescue & crowd management. It is an organization of highly trained professionals and also a strong team of trained volunteers.</p>
+            <i class="fa-solid fa-brain " style="color:blue"></i>
         </section>
 
         <!-- Three Column Section -->

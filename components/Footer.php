@@ -4,7 +4,7 @@
             <!-- Logo and Description Section -->
             <div class="space-y-4 animate-fade-in">
                 <div class="flex items-center space-x-2">
-                    <img src="/assets/civildefence logo.jpg" alt="Civil Defence  Logo" class="h-12 w-auto">
+                    <img src="/assets/civildefence logo.jpg" alt="Civil Defence  Logo" class="h-12 rounded-md">
                     <h3 class="text-xl font-bold">Civil Defence Indore</h3>
                 </div>
                 <p class="text-text-secondary leading-relaxed">
