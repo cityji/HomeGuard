@@ -15,6 +15,39 @@
     <?php 
     include('./components/Nav.php');
     ?>
+    <main class="container mx-auto p-6">
+        <!-- Textbox Section on Top -->
+        <section class="bg-gray-100 p-6 rounded-md mb-8">
+            <h2 class="text-xl font-bold text-primary mb-2">Civil Defence Indore</h2>
+            <p class="text-text-secondary">Civil Defence plays a crucial role in ensuring public safety during emergencies. It assists in rescue missions, relief operations, and volunteer training to prepare for crises. Civil Defence Indore is a Government-run organization of highly qualified professionals in responding quickly to emergencies like rescue operations from disaster, fire rescue & crowd management. It is an organization of highly trained professionals and also a strong team of trained volunteers.</p>
+        </section>
+
+        <!-- Three Column Section -->
+        <!-- Three Column Section -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+    <!-- Left Image Section (Square) -->
+    <div class="bg-gray-100 p-6 rounded-md flex items-center justify-center">
+        <img src="/assets/cm mp.jpg" alt="CM Image" class="w-40 h-40 object-cover rounded-md">
+    </div>
+
+    <!-- Notice Board (Rectangle) -->
+    <div class="bg-primary-light text-text-white p-6 rounded-md w-full h-48">
+        <h2 class="text-xl font-semibold border-b mb-4">Notice Board</h2>
+        <div class="overflow-hidden">
+            <div class="scroll-up flex flex-col space-y-4">
+                <p>Notice 1: Emergency drill on 15th Jan</p>
+                <p>Notice 2: Volunteer meeting at 4 PM</p>
+                <p>Notice 3: Training session on disaster management</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Right Image Section (Square) -->
+    <div class="bg-gray-100 p-6 rounded-md flex items-center justify-center">
+        <img src="/assets/collector indore.jpg" alt=" Collector Image" class="w-40 h-40 object-cover rounded-md">
+    </div>
+</div>   
+    </main>
         <!-- Services Preview -->
         <div class="grid md:grid-cols-2 gap-8 rounded-3xl bg-white shadow-xl p-8">
             <div class="space-y-6">
